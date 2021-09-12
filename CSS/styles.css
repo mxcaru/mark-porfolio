@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(232, 238, 241);
+}
+
+.mark-logo {
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #1d3e53;
+  transition: all 0.3s ease 0s;
+}
+
+.mark-logo:hover {
+  color: #3db2ff;
+}
+
+li,
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #1d3e53;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #3db2ff;
+}
