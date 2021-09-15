@@ -4,38 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mark Carungay</title>
+    <title>Mark - Web Developer</title>
     <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="icon" href="images/m-logo.png" type="image/gif" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="header">
-      <a class="mark-logo" href="#">Mark.</a>
-      <div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+    <nav class="navbar">
+      <div class="brand-name"><a href="#">Mark.</a></div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </header>
-    <div class="top-section">
-      <div class="intro-text">
-        <h1 class="top-text">Hello there, I am</h1>
-        <h2 class="mid-text">Mark Carungay.</h2>
-        <h3 class="desc-text">A self-taught web developer.</h3>
-        <p>
-          I love building beautiful, elegant and responsive web applications.
-        </p>
-      </div>
+    </nav>
+    <div class="container">
+      <section class="about">
+        <div class="intro">
+          <h1>Hello there, I am</h1>
+          <h2>Mark Carungay.</h2>
+          <h3>A self-taught web developer.</h3>
+          <p>
+            I love building beautiful, elegant and responsive web applications.
+          </p>
+        </div>
+      </section>
+      <section class="projects"><h1>Projects</h1></section>
+      <section class="contact"><h1>Contact</h1></section>
     </div>
   </body>
 </html>
