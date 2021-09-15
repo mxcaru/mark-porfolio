@@ -1,80 +1,97 @@
 * {
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: rgb(232, 238, 241);
-  padding: 0 100px;
 }
 
-.mark-logo {
-  font-weight: 800;
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background-color: #c2ffd9;
+}
+
+.projects {
+  background-color: #ffd371;
+}
+
+.contact {
+  background-color: #9ddac6;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.brand-name a {
   text-decoration: none;
-  font-size: 2.5rem;
-  color: #1d3e53;
-  transition: all 0.3s ease 0s;
+  color: #1e3d58;
 }
-
-.mark-logo:hover {
-  color: #3db2ff;
-}
-
-li,
-a {
-  font-weight: 600;
-  text-decoration: none;
-  color: #1d3e53;
-}
-
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
 }
 
-.nav-links {
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links li {
   list-style: none;
 }
-
-.nav-links li {
-  display: inline-block;
-  padding: 0 20px;
+.navbar-links li a {
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 700;
+  color: #1e3d58;
 }
 
-.nav-links li a {
-  transition: all 0.3s ease 0s;
+.navbar-links li a:hover {
+  color: #057dcd;
 }
 
-.nav-links li a:hover {
-  color: #3db2ff;
+.brand-name a:hover {
+  color: #057dcd;
+}
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
-.top-section {
+.toggle-button .bar {
+  height: 3px;
   width: 100%;
-  height: 100%;
-  padding: 200px 0 0 300px;
+  background-color: #1e3d58;
+  border-radius: 10px;
 }
 
-.top-text {
-  font-weight: 400;
-  font-size: 20px;
-  color: #1d3e53;
+.intro {
+  padding: 1rem;
 }
 
-.mid-text {
-  font-size: 80px;
-  color: #1d3e53;
-}
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
 
-.desc-text {
-  font-weight: 800;
-  font-size: 60px;
-  color: #476d7c;
-}
-
-p {
-  color: #476d7c;
+  .navbar-links {
+    display: none;
+  }
 }
