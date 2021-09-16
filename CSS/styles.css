@@ -94,6 +94,19 @@ section {
   font-size: 1rem;
 }
 
+.back-to-top a {
+  text-decoration: none;
+}
+
+.contact {
+  position: relative;
+}
+.back-to-top img {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
 @media (max-width: 600px) {
   .toggle-button {
     display: flex;
