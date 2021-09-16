@@ -2,18 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: rgb(232, 238, 241);
+  font-family: "Poppins", sans-serif;
 }
 
 section {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .about {
@@ -51,10 +48,12 @@ section {
   list-style: none;
 }
 .navbar-links li a {
+  display: block;
   text-decoration: none;
   padding: 1rem;
   font-weight: 700;
   color: #1e3d58;
+  font-size: 0.8rem;
 }
 
 .navbar-links li a:hover {
@@ -83,7 +82,12 @@ section {
 }
 
 .intro {
-  padding: 1rem;
+  padding: 5rem;
+}
+
+.intro h1 {
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 @media (max-width: 600px) {
@@ -91,7 +95,32 @@ section {
     display: flex;
   }
 
+  }
+
   .navbar-links {
     display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+  text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 }
