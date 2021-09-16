@@ -114,10 +114,6 @@ section {
     display: flex;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   .navbar-links {
     display: none;
     width: 100%;
