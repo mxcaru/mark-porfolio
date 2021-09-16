@@ -105,6 +105,8 @@ section {
   position: absolute;
   height: 30px;
   width: 30px;
+  left: 50%;
+  bottom: 0;
 }
 
 @media (max-width: 600px) {
