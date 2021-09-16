@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(232, 238, 241);
   font-family: "Poppins", sans-serif;
@@ -95,8 +99,6 @@ section {
     display: flex;
   }
 
-  }
-
   .navbar-links {
     display: none;
     width: 100%;
@@ -113,7 +115,7 @@ section {
   }
 
   .navbar-links ul li {
-  text-align: center;
+    text-align: center;
   }
 
   .navbar-links ul li a {
