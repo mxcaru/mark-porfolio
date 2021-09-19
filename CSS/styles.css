@@ -116,7 +116,11 @@ p {
 
 .intro h1 {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
 }
 
 .back-to-top a {
@@ -176,5 +180,10 @@ p {
 
   .navbar-links.active {
     display: flex;
+  }
+
+  .intro {
+    padding: 5rem;
+    width: 80rem;
   }
 }
