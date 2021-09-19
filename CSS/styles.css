@@ -36,13 +36,14 @@ section {
 }
 .brand-name a {
   text-decoration: none;
-  color: #1e3d58;
+  color: #e8eef1;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 200px 0 200px;
+  background-color: #1e3d58;
 }
 
 .navbar-links ul {
@@ -57,7 +58,7 @@ section {
   text-decoration: none;
   padding: 1rem;
   font-weight: 700;
-  color: #1e3d58;
+  color: #e8eef1;
   font-size: 0.8rem;
 }
 
@@ -82,13 +83,35 @@ section {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #1e3d58;
+  background-color: #e8eef1;
   border-radius: 10px;
 }
 
-.intro {
-  padding: 5rem;
-  width: 900px;
+.intro h1,
+h2 {
+  color: #1e3d58;
+}
+
+.intro h2 {
+  font-size: clamp(28px, 7vw, 85px);
+}
+
+.intro h3 {
+  font-size: clamp(20px, 5vw, 55px);
+}
+
+.intro h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.intro p {
+  max-width: 60%;
+}
+
+.intro h3,
+p {
+  color: #607d8b;
 }
 
 .intro h1 {
@@ -116,7 +139,13 @@ section {
   justify-content: center;
 }
 
-@media (max-width: 600px) {
+.intro {
+  padding: 5rem;
+  width: 80rem;
+  padding-top: 15.6rem;
+}
+
+@media (max-width: 768px) {
   .toggle-button {
     display: flex;
   }
