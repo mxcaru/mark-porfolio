@@ -42,6 +42,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 200px 0 200px;
 }
 
 .navbar-links ul {
@@ -87,6 +88,7 @@ section {
 
 .intro {
   padding: 5rem;
+  width: 900px;
 }
 
 .intro h1 {
@@ -109,6 +111,11 @@ section {
   bottom: 0;
 }
 
+.parent-intro {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 600px) {
   .toggle-button {
     display: flex;
@@ -122,6 +129,7 @@ section {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0;
   }
 
   .navbar-links ul {
