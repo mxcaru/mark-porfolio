@@ -105,10 +105,6 @@ h2 {
   font-weight: 500;
 }
 
-.intro p {
-  max-width: 60%;
-}
-
 .intro h3,
 p {
   color: #607d8b;
@@ -129,13 +125,6 @@ p {
 
 .contact {
   position: relative;
-}
-.back-to-top img {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  left: 50%;
-  bottom: 0;
 }
 
 .parent-intro {
@@ -185,5 +174,6 @@ p {
   .intro {
     padding: 5rem;
     width: 80rem;
+    text-align: center;
   }
 }
